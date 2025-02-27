@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "A_realistic_image_of_a_modern_table_neatly_arrange.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
