@@ -46,7 +46,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions:
                      [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Configure Superwall with your API key
-        Superwall.configure(apiKey: "pk_fe5d07ac24814c97591757559eb54e32acf3d521396808d7")
+        //Superwall.configure(apiKey: "key_disabled")
        
 //        let providerFactory = AppCheckDebugProviderFactory()
 //        AppCheck.setAppCheckProviderFactory(providerFactory)
