@@ -22,7 +22,7 @@ func parseMatrix(from matrixString: String) -> [[Int]]? {
         
 }
 func checkSubscription(customerId: String, completion: @escaping (Bool) -> Void) {
-        guard let url = URL(string: "https://smilecheck-backend.onrender.com/check-subscription") else {
+        guard let url = URL(string: "disabled_url") else {
                 completion(false)
                 print("could not connect to backend maybe an issue")
                 return
@@ -549,11 +549,11 @@ func analyzeImage(image: UIImage, completion: @escaping (Result<(String, String)
                 print("Failed to encode image")
                 return
         }
-        let url = URL(string: "https://api.openai.com/v1/chat/completions")!
+        let url = URL(string: "disabled_url")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer disabled_key", forHTTPHeaderField: "Authorization")
         
         // Prepare different prompt messages for male and female
         let promptMessages: [[String: Any]]
@@ -623,7 +623,7 @@ func analyzeImage(image: UIImage, completion: @escaping (Result<(String, String)
                                         var secondRequest = URLRequest(url: url)
                                         secondRequest.httpMethod = "POST"
                                         secondRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
-                                        secondRequest.setValue("Bearer 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", forHTTPHeaderField: "Authorization")
+                                        secondRequest.setValue("Bearer disabled_key", forHTTPHeaderField: "Authorization")
                                         
                                         let secondPromptMessageContent = """
                                         This is an AI-image generated dental image of a person's teeth and let's pretend you are a dental expert and advisor. Assess this person's teeth according to these metrics. Assume the role of a dental expert and advisor and classify for these 4 metrics only outputting a numeric value according to the following:
@@ -715,7 +715,7 @@ func generateWorkoutPlan(basedOn content: String, selectedDays: [Bool], completi
 
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("Bearer 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", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer disabled_key", forHTTPHeaderField: "Authorization")
 
         // Retrieve the selected gender from UserDefaults
         let selectedGender = UserDefaults.standard.string(forKey: "selectedGender") ?? "male" // Default to male
